@@ -1,0 +1,65 @@
+<!--  booking.html   -->
+<!--  author: Hannah   -->
+
+<HTML XMLns="http://www.w3.org/1999/xHTML"> 
+    <head> 
+        <title>Cabsonline</title>
+		<script type="text/javascript" src="booking_js.js"> </script> 
+	    <script type="text/javascript" src="assign_js.js"></script>
+        <script type="text/javascript" src="admin_js.js"> </script>
+		
+	    <link rel="stylesheet" href="styles.css" type="text/css" /> 
+	</head>
+	<body>
+	    <h1><img src="book-a-taxi-icon.png" alt="label" width="300" height="150" /> </h1>
+		<h2>CabsOnline</h2>
+		<form id="form">
+		    <table>
+			    <tr>
+				    <td>Customer Name*:  </td>
+					<td><input type="text" id="customer_name"><span id="customer_name_error" style="color:red"></span></td>
+				</tr>
+				<tr>
+				    <td>Contact Phone*:  </td>
+					<td><input type="text" id="contact_phone"><span id="contact_phone_error" style="color:red"></span></td>
+		        </tr>
+                <tr>
+				    <td>Pick-up Address*:  </td>
+				</tr>
+				<tr>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;Unit Number:  </td>
+					<td><input type="text" id="pickup_unit_number"><span id="pickup_unit_number_error" style="color:red"></span></td>
+				</tr>
+				<tr>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;Street Number*:  </td>
+					<td><input type="text" id="pickup_street_number"><span id="pickup_street_number_error" style="color:red"></span></td>
+				</tr>
+				<tr>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;Street Name*:  </td>
+					<td><input type="text" id="pickup_street_name"><span id="pickup_street_name_error" style="color:red"></span></td>
+				</tr>
+				<tr>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;Suburb*:  </td>
+					<td><input type="text" id="pickup_suburb"><span id="pickup_suburb_error" style="color:red"></span></td>
+				</tr>
+                <tr>
+                    <td>Destination Suburb*:</td>
+                    <td><input type="text" id="destination_suburb"><span id="destination_suburb_error" style="color:red"></span></td>
+                </tr>
+				<tr>
+                    <td>Pick-up date/time*:</td>
+                    <td><input type="datetime" id="pickup_time"><span id="pickup_time_error" style="color:red"></span</td>
+					<td>Please follow time format: (yyyy-mm-dd hh:mm) Example: 2020-06-10 12:30</td>
+                </tr> 
+                			
+            </table>
+            </br>
+            <input type="button" value="Book a taxi" onclick="book_a_taxi()" />			
+        </form>
+        <br />
+        <div id="targetDiv"> </div> 	
+		<a href="admin.html">Administration Page</a>
+		<br />
+		<p1>Note: The asterisk * means a field is required. Please input your information into the required filed.</p1>
+	</body>
+</html>

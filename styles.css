@@ -1,0 +1,19 @@
+body{
+	font-size: 100%;
+	background-color: #D6EAF8;
+}
+
+h2 {
+	color:red;
+	font-family:Serif;
+	font-weight:bold;
+}
+
+table td{
+	padding: 10px;
+	text-align: left;
+}
+P1 {
+	color:red;
+}
+

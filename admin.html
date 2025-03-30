@@ -1,0 +1,33 @@
+<!-- admin.html-->
+<!--  author: Hannah   -->
+  
+<HTML XMLns="http://www.w3.org/1999/xHTML"> 
+    <head> 
+        <title>Cabsonline</title> 
+	    <script type="text/javascript" src="booking_js.js"> </script> 
+	    <script type="text/javascript" src="assign_js.js"></script>
+        <script type="text/javascript" src="admin_js.js"> </script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <h1><img src="book-a-taxi-icon.png" alt="label" width="300" height="150" /> </h1>
+        <br />
+		<p1>Please click the following button to show  pick-up requests:</p1>
+		<input type="button" onClick="showBooking('admin.php')" value="Show Booking" />
+	    <br />
+		<table id= "table" border="1"></table>
+		<br />
+        <form>
+            Booking Reference Number:
+            <input type="text" id="booking_reference_number"/><span id="booking_reference_number_error" style="color:red"></span>
+			<br />
+            <input type="button" onClick="assignTaxi('assign.php')" value="Assign taxi" />
+        </form>
+        <br />
+		<div id="targetDiv"></div>
+		<br />
+		<a href="booking.html">Booking Page</a>
+		<br />
+		<p2>Note:Only show all the bookings with a pick-up time within 2 hours from now.</p2>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+create table cabsonline (
+       id_request INT(20) A_I primary key,
+       customer_name VARCHAR(200) NOT NULL,
+       contact_phone VARCHAR(200) NOT NULL,
+       pickup_unit_number VARCHAR(200) NOT NULL,
+       pickup_street_number VARCHAR(200) NOT NULL,
+       pickup_street_name VARCHAR(200) NOT NULL,
+       pickup_suburb VARCHAR(200) NOT NULL,
+       destination_suburb VARCHAR(200) NOT NULL,
+       pickup_time DATETIME NOT NULL,
+       booking_reference_number INT(200) UNQUIE NOT NULL,
+       booking_time DATETIME NOT NULL,
+       booking_status VARCHAR(200) DEFAULT 'unassigned' NOT NULL,
+);
+
+SELECT * FROM cabsonline WHERE booking_reference_number = '$booking_reference_number'
+
+INSERT INTO cabsonline(customer_name, contact_phone, pickup_unit_number, pickup_street_number, pickup_street_name, pickup_suburb, destination_suburb, pickup_time, booking_reference_number, booking_time, booking_status)VALUES('$customer_name','$contact_phone','$pickup_unit_number', '$pickup_street_number', '$pickup_street_name', '$pickup_suburb', '$destination_suburb', '$pickup_time', '$booking_reference_number', '$booking_time', '$booking_status')
+
+SELECT * FROM  cabsonline WHERE pickup_time > NOW() AND pickup_time < NOW() + INTERVAL 2 HOUR AND booking_status = 'unassigned'
+
+UPDATE cabsonline SET booking_status = 'assigned' WHERE booking_reference_number = '$booking_reference_number'
