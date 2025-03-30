@@ -9,20 +9,20 @@
    
 2.	Enter the booking information
    
-1)	Notice: the contact phone just only number, and pick-up time have format. Please follow the time format.
+- Notice: the contact phone just only number, and pick-up time have format. Please follow the time format.
    
-2)	When you click the “Book a taxi” button, the input details will be sent after all the information is valid, except unit number.
-   
-3)	After you click the “Book a taxi” button and all the information is valid, the sever side will sent back to you booking reference number automatically. It will show: “Thank you! Your booking reference number is xxxxxx. You will be picked up in front of your provided address at xx:xx on xxxx-xx-xx .”
+- When you click the “Book a taxi” button, the input details will be sent after all the information is valid, except unit number.
+
+- After you click the “Book a taxi” button and all the information is valid, the sever side will sent back to you booking reference number automatically. It will show: “Thank you! Your booking reference number is xxxxxx. You will be picked up in front of your provided address at xx:xx on xxxx-xx-xx .”
    
 3.	Go to Administration page to enter admin.html for showing your booking information and assigning
    
-1)	Click the show booking button
+-	Click the show booking button
 Notice: Only show all the booking with a pick-up time within 2 hours from now
 
-2)	The table of booking information will be displayed.
+-	The table of booking information will be displayed.
    
-3)	Enter the booking reference number, and then click the assign a taxi button to assign a taxi
+-	Enter the booking reference number, and then click the assign a taxi button to assign a taxi
    
 a)	The booking reference number you enter is number;
 
