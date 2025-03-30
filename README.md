@@ -1,5 +1,9 @@
 # Taxi-booking-system
 
+- The project is to develop simple web-based taxi booking system, which allows passengers to book taxi services from any of their internet connected computers or mobile phones.
+  
+- The techniques I use include the Ajax techniques(JavaScript/HTML, XMLHttpRequest, CSS, and DOM), MySQL and PHP. For client-server communication, I use XMLHttpRequest object.
+
 ## A list of all the files in the system
 ![image](https://github.com/user-attachments/assets/e4b94f84-5977-4889-82ea-1ae37b15b8c9)
 
